@@ -1,7 +1,7 @@
 const prompt = require('prompt-sync')();
 
-let unidad = prompt("Escribe: F para Convertir Fahrenheit a Celsius y C para Convertir de Celsius a Fahrenheit ");
-let valor = prompt("Escribe la temperatura ");
+let unidad = prompt("Escribe: F para Convertir Fahrenheit a Celsius y C para Convertir de Celsius a Fahrenheit: ");
+let valor = prompt("Escribe la temperatura: ");
 
 
 if (unidad == 'F' | unidad == 'f') {
@@ -17,13 +17,13 @@ else {
 function Fahrenheit(valor) {
     // (50°F - 32) x .5556 = 10°C
     fah = (valor - 32) * .5556
-    return fah
+    return fah.toFixed(2)
 
 } 
 
 function Celsius(valor) {
-    // (50°F - 32) x .5556 = 10°C
+    // (37.78°C * 1.8) + 32 = 100°C
     cel = (valor * 1.8) + 32
-    return cel
+    return cel.toFixed(2)
 } 
 
